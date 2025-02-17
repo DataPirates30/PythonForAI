@@ -53,7 +53,28 @@ def moreOperations():
         "name": "John",
         "age": 36,
         "height": 6.1
-        
     }
+    for key,val in myDict.items():
+        print(key,val)
 
+def setOperations():
+    # A set is an unordered, mutable collection of unique items.
+    # No duplicate Values
+    # Unordered(No Indexing like list/tuples)
+    # Fast membership checks(in operator)
+    # Supports mathematical operations like union, intersection, difference, and symmetric difference.
+    mySet = {1,2,3,3,4,5}
+    print(mySet)
+
+def EnumerateAndZip():
+    # The enumerate function adds a counter to an iterable and returns it in a form of enumerate object.
+    fruits = ["apple", "banana", "cherry"]
+    for index,val in enumerate(fruits):
+        print(index," at ",val)
+
+    # The zip function pairs elements from multiple elements
+    names = ["John", "Doe", "Jane"]
+    scores = [10,20,30]
+    for name,score in zip(names,scores):
+        print(name," scored ",score)
 
