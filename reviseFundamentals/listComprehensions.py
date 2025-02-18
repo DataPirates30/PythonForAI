@@ -13,7 +13,7 @@ def listComprehend():
     # Syntax: [expression for item in iterable if condition]
     # The expression is applied to each item in the iterable.
     # The condition filters the items that satisfy the condition.
-    features = [x*6 for x in dataSets]
+    features = [x*6 for x in dataSets if x%2==0]
     print(features)
 
 listComprehend()
