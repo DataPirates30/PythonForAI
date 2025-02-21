@@ -6,17 +6,20 @@
 import numpy as np
 import ctypes
 
-def pointerBehavior():
-    arr = np.array([1,2,3,4,5],dtype = np.int32)
-    ptr = arr.ctypes.data
-    for i in range(arr.size):
-        print(f"Element:{i}, Address:{ptr+i*arr.itemsize}, Value = {arr[i]}")
+def main():
+    def pointerBehavior():
+        arr = np.array([1,2,3,4,5],dtype = np.int32)
+        ptr = arr.ctypes.data
+        for i in range(arr.size):
+            print(f"Element:{i}, Address:{ptr+i*arr.itemsize}, Value = {arr[i]}")
 
-def creating2DArray():
-    my2D = np.array([[1,2,3],[4,5,6]])
-    print(my2D)
+    def creating2DArray():
+        my2D = np.array([[1,2,3],[4,5,6]])
+        print(my2D)
 
-creating2DArray()
+    pointerBehavior()
 
+if __name__ == "__main__":
+    main()
 
 
