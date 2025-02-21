@@ -14,6 +14,7 @@ my_array = np.array(my_list)
 print(sys.getsizeof(my_list)) # 56
 my_list = [1,2,3]
 print(sys.getsizeof(my_list)) # 88(Extra memory for frequent resizing)
+# An empty numpy array takes 88 bytes of base memory in numpy
 
 
 
