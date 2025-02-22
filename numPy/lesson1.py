@@ -6,6 +6,16 @@
 import numpy as np
 import ctypes
 
+
+def creating1DAray():
+    # int32 allocates 4 bytes for int, 64 allocates 8 bytes for int
+    myArr = np.array([[10,20,0],[30,40,50]], dtype = np.int32) 
+    print(myArr.itemsize)
+    print(myArr.shape)
+
+
+    
+
 def main():
     def pointerBehavior():
         arr = np.array([1,2,3,4,5],dtype = np.int32)
@@ -17,9 +27,11 @@ def main():
         my2D = np.array([[1,2,3],[4,5,6]])
         print(my2D)
 
-    pointerBehavior()
+    # pointerBehavior()
+
 
 if __name__ == "__main__":
-    main()
+    # main()
+    creating1DAray()
 
 
