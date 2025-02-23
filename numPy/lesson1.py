@@ -12,6 +12,11 @@ def creating1DAray():
     myArr = np.array([[10,20,0],[30,40,50]], dtype = np.int32) 
     print(myArr.itemsize)
     print(myArr.shape)
+    print("Sum = ",np.sum(myArr))
+    print("Mean = ",np.mean(myArr))
+    print("Max = ",np.max(myArr))
+    print("Min = ",np.min(myArr))
+    return myArr
 
 
     
@@ -32,6 +37,5 @@ def main():
 
 if __name__ == "__main__":
     # main()
-    creating1DAray()
-
-
+    newArr=creating1DAray()
+            
